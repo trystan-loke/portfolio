@@ -15,7 +15,7 @@
       </ul>
     </div>
   </header>
-  <router-view class="view"></router-view>
+  <div class="content"><router-view /></div>
 </template>
 
 <script>
@@ -30,10 +30,14 @@ export default {
 </script>
 
 <style>
-header{
+*{
   font-family: Calibri;
   font-weight: 400;
   font-style: normal;
+}
+
+header{
+  height: 210px;
 }
 
 header img{
@@ -96,6 +100,12 @@ header a:hover{
   padding-left: 12px;
   font-size: 12px;
   line-height: 12px;
+}
+
+.content{
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 </style>
