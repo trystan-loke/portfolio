@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="assets/headerBackground.jpg" alt="Header Image">
+    <img src="assets/HeaderBackground.jpg" alt="Header Image">
     <nav>
       <router-link to="/about">About me</router-link>
       <router-link to="/experience">Experience</router-link>
