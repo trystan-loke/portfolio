@@ -1,17 +1,20 @@
 <template>
-  <PortfolioBody title="About me">
-    <h3>{{ CONSTANTS.ABOUT_ME }}</h3>
+  <PortfolioBody title="Experiences">
+		<ExperienceItem v-for="item in CONSTANTS.Experiences" :experience-item="item" />
   </PortfolioBody>
 </template>
 
 <script>
 import CONSTANTS from './../constants/values'
+import ExperienceItem from '../components/ExperienceItem.vue'
 import PortfolioBody from '../components/PortfolioBody.vue';
+
 export default {
-  name: 'About',
-  components: {
+  name: 'Experiences',
+	components: {
+		ExperienceItem,
     PortfolioBody
-  },
+	},
 	data() {
     return {
       CONSTANTS: CONSTANTS
@@ -19,3 +22,6 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+</style>

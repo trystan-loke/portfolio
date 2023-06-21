@@ -3,7 +3,7 @@
     <img src="assets/HeaderBackground.jpg" alt="Header Image">
     <nav>
       <router-link to="/about">About me</router-link>
-      <router-link to="/experience">Experience</router-link>
+      <router-link to="/experiences">Experiences</router-link>
       <router-link to="/education">Education</router-link>
     </nav>
     <div class="header-details">
