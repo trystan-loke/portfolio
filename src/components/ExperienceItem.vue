@@ -1,6 +1,6 @@
 <template>
   <div class="experience-item">
-    <img :src="`/assets/${experienceItem.logo}`" :alt="experienceItem.company" />
+    <img :src="`/assets/company-logo/${experienceItem.logo}`" :alt="experienceItem.company" />
     <div class="experience-item-details">
       <div class="experience-item-details-header">
         <h3>{{ experienceItem.title }} for {{ experienceItem.company }}</h3>

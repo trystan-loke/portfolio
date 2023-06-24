@@ -1,6 +1,6 @@
 <template>
   <footer>
-		<img class="qr-name-card" :src="`../assets/Blinq-QR.png`" alt="QR Name Card"/>
+		<img class="qr-name-card" :src="qrImage" alt="QR Name Card"/>
 		<div class="footer-information">
 			<i class="fa-regular fa-copyright fa-sm"></i>
 			<strong style="margin-left: 5px;">Trystan Loke 2023</strong>
@@ -20,8 +20,14 @@
 </template>
 
 <script>
+import qrImage from '../assets/Blinq-QR.png'
 export default {
-  name: 'Footer'
+  name: 'Footer',
+	data() {
+    return {
+      qrImage
+    }
+  }
 }
 </script>
 

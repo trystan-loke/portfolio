@@ -7,6 +7,8 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
+    assetModuleFilename: 'assets/[hash][ext][query]',
+    clean: true,
   },
 	plugins: [
     new VueLoaderPlugin(),
@@ -15,7 +17,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets' }
+        { from: 'src/assets/company-logo', to: 'assets/company-logo' }
       ]
     })
   ],
@@ -28,7 +30,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: 'asset/resource'
+      },
     ]
   },
   devServer: {
