@@ -52,7 +52,7 @@ export default {
 			startDate: '10/2016',
 			endDate: '03/2018',
 			responsibilities: [
-				'- Designed and developed commercial windows application and mobile application with .Net, WPF, Xamarin, DevExpress, nhibernate and MS SQL', 
+				'- Designed and developed commercial Windows application and mobile application with .Net, WPF, Xamarin, DevExpress, nhibernate and MS SQL', 
         '- Conducted new research on new technology and use in existing system.',
         '- Designed and performed endurance test for android app.'
 			]
