@@ -5,11 +5,11 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vue-loader": "^17.1.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
+    "vue-loader": "^17.1.0",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.2",
