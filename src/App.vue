@@ -1,21 +1,19 @@
 <template>
-  <header>
-    <img src="assets/HeaderBackground.jpg" alt="Header Image">
-    <nav>
-      <router-link to="/about">About me</router-link>
-      <router-link to="/experiences">Experiences</router-link>
-      <router-link to="/education">Education</router-link>
-    </nav>
-    <div class="header-details">
-      <p class="header-name">{{ CONSTANTS.PERSONALDETAILS.NAME }}</p>
-      <p class="header-title">{{ CONSTANTS.PERSONALDETAILS.TITLE }}</p>
-      <p class="header-contact">{{ CONSTANTS.PERSONALDETAILS.MOBILE }} &emsp; {{ CONSTANTS.PERSONALDETAILS.EMAIL }}</p>
-      <ul>
-        <li v-for="item in CONSTANTS.PERSONALDETAILS.SKILLS">{{ item }}</li>
-      </ul>
-    </div>
-  </header>
-  <div class="content"><router-view /></div>
+    <header>
+      <nav>
+        <router-link to="/about">About me</router-link>
+        <router-link to="/experiences">Experiences</router-link>
+      </nav>
+      <div class="header-details">
+        <p class="header-name">{{ CONSTANTS.PERSONALDETAILS.NAME }}</p>
+        <p class="header-title">{{ CONSTANTS.PERSONALDETAILS.TITLE }}</p>
+        <p class="header-contact">{{ CONSTANTS.PERSONALDETAILS.MOBILE }} &emsp; {{ CONSTANTS.PERSONALDETAILS.EMAIL }}</p>
+        <ul>
+          <li v-for="item in CONSTANTS.PERSONALDETAILS.SKILLS">{{ item }}</li>
+        </ul>
+      </div>
+    </header>
+    <div class="content"><router-view /></div>
 </template>
 
 <script>
@@ -36,22 +34,19 @@ export default {
   font-style: normal;
 }
 
-header{
-  height: 210px;
+html {
+  overflow-y: scroll;
 }
 
-header img{
-  width: 100%;
-  height: 220px;
-  position: absolute;
-  object-fit: cover;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+header{
+  height: 210px;
+  background-image: url("assets/HeaderBackground.jpg");
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 header nav{
-  margin-top: 10px;
+  padding-top: 10px;
   margin-left: 20px;
   font-size: 14px;
   display: flex;
@@ -61,6 +56,7 @@ header nav{
 
 header a{
   text-decoration: none;
+  color: darkblue;
 }
 
 header a:hover{
@@ -73,7 +69,7 @@ header a:hover{
   justify-content: center;
   align-items:flex-start;
   width: 50%;
-  margin: 30px 0px 0px 30%;
+  margin: 20px 0px 0px 30%;
 }
 
 .header-details *{
