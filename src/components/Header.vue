@@ -82,7 +82,7 @@ header a:hover{
 .header-details ul{
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: 70px 70px;
+  grid-template-columns: 75px 75px;
   padding-left: 12px;
   font-size: 12px;
   line-height: 12px;
