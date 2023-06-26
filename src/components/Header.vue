@@ -58,7 +58,6 @@ header a:hover{
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
-  width: 50%;
   margin: 20px 0px 0px 30%;
 }
 
@@ -86,5 +85,27 @@ header a:hover{
   padding-left: 12px;
   font-size: 12px;
   line-height: 12px;
+}
+
+@media (max-width: 623px) {
+  .header-details {
+    margin-left: 20%;
+  }
+
+  .header-name {
+    font-size: 25px;
+  }
+
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-contact {
+    font-size: 11px;
+  }
+
+  .header-details ul {
+    font-size: 12px;
+  }
 }
 </style>
